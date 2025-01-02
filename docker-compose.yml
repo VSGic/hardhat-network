@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  hardhat-node:
+    build:
+      context: .
+    image: hardhat-node:latest
+    container_name: hardhat-node
+    ports: 
+      - "8545:8545"
